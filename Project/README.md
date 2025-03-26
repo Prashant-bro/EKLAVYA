@@ -29,3 +29,7 @@ Follow these steps to set up the project locally:
 1️⃣ **Clone the Repository**  
 ```bash
 git clone https://github.com/Prashant-bro/EKLAVYA.git
+- install the requirement.txt such as module
+-use the database folder to access the database
+- run the code finally 
+
