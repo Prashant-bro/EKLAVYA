@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        header {
+            font-size: 100px;
+            color: black;
+            text-align: center;
+        }
+        body {
+            background-color: dimgrey;
+            text-align: center;
+            margin-bottom: 200px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container img {
+            width: 150px; 
+            height: 150px;
+            margin: 10px;
+        }
+        input[type="radio"] {
+            width: 20px; 
+            height: 20px;
+        }
+        input[type="submit"] {
+            width: 120px;
+            height: 50px;
+            font-size: 18px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>Voting Page</header>
+    <div class="container">
+        <form action="/" method="POST">
+            <input type="hidden" name="voter_id" value="{{ voter_id }}">
+
+            <label>
+                <img src="bjp.jpg">
+                <input type="radio" name="option" value="BJP" required>
+            </label>
+            <br>
+            <label>
+                <img src="congress.png">
+                <input type="radio" name="option" value="CONGRESS">
+            </label>
+            <br>
+            <label>
+                <img src="AAP.jpg">
+                <input type="radio" name="option" value="AAP">
+            </label>
+            <br>
+            <label>
+                <img src="smj.png">
+                <input type="radio" name="option" value="SAMAJWADI">
+            </label>
+            <br>
+            <label>
+                <img src="nota.png">
+                <input type="radio" name="option" value="NOTA">
+            </label>
+            <br><br>
+            <input type="submit" value="Submit Vote">
+        </form>
+    </div>
+</body>
+</html>
